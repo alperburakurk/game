@@ -1,2 +1,5 @@
 res://scenes/level_1.tscn
+res://scenes/player_(character_body_2d).tscn
+res://scenes/game_over_ui.gd
 res://assets/tilesets/dungeon_tileset.tres
+res://scenes/skeleton.tscn

@@ -492,11 +492,14 @@ collision_layer = 2
 script = ExtResource("1_4fffl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=271153593]
+scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_rf0gn")
 animation = &"hurt_effect"
 frame_progress = 0.11863882
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D" unique_id=1552768427]
+zoom = Vector2(3, 3)
+limit_enabled = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=200819426]
 position = Vector2(-5.5, 2.4375)
