@@ -1,0 +1,15 @@
+CanvasGroup
+Control
+CanvasLayer
+Label
+ProgressBar
+CollisionShape2D
+Area2D
+ColorRect
+AnimatedSprite2D
+CharacterBody2D
+TileMapLayer
+Sprite2D
+Camera2D
+StaticBody2D
+CollisionPolygon2D

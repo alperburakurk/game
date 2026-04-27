@@ -1,0 +1,182 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1777085054
+icon.svg::CompressedTexture2D::3452630582183152301::1777084690::1777084861::1::::<><><>0<>0<>114f3a1ae52eca4c67da89874fdbfc74<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1777085096
+::res://assets/enemies/::1777085155
+::res://assets/enemies/Files/::1777085155
+::res://assets/enemies/GIFS/::1777085155
+::res://assets/enemies/Sprite Sheets/::1777085155
+Skeleton Attack.png::CompressedTexture2D::1328865774563717572::1777085155::1777085155::1::::<><><>0<>0<>013b8ae2e22d6b118399d2863ef47f9d<>res://.godot/imported/Skeleton Attack.png-89c23c85e4a70c8174c4642fbfd0018e.ctex::
+Skeleton Dead.png::CompressedTexture2D::8968616125741923520::1777085155::1777085155::1::::<><><>0<>0<>4a76a9597d8ff3c1b8fc9c209b85bd12<>res://.godot/imported/Skeleton Dead.png-5837cff249b3dcc0de6212c4966546ff.ctex::
+Skeleton Hit.png::CompressedTexture2D::8042034620691663427::1777085155::1777085155::1::::<><><>0<>0<>968ea644a54628c607f073142a37bcef<>res://.godot/imported/Skeleton Hit.png-98770a5ef30f01c7c2b246e0ede80221.ctex::
+Skeleton Idle.png::CompressedTexture2D::5887908375583117606::1777085155::1777085155::1::::<><><>0<>0<>c1496f140c3e57897fcf227bf7cae888<>res://.godot/imported/Skeleton Idle.png-282cd7b154769e36a1fb4aefa48772dc.ctex::
+Skeleton React.png::CompressedTexture2D::4164859288830118120::1777085155::1777085155::1::::<><><>0<>0<>acde25eec75b0ce1c47396ddaa877fa0<>res://.godot/imported/Skeleton React.png-75574d28c7261b1a9c2f28b1a1c16ad7.ctex::
+Skeleton Walk.png::CompressedTexture2D::5697801011796565512::1777085155::1777085155::1::::<><><>0<>0<>809c03825cde09f2501080c88bfdcaea<>res://.godot/imported/Skeleton Walk.png-2e49d53f7f8555788f46534783432ba1.ctex::
+::res://assets/player/::1777085136
+::res://assets/player/Individual Sprite/::1777085121
+::res://assets/player/Individual Sprite/Attack/::1777085121
+Warrior_Attack_1.png::CompressedTexture2D::8919251666156850917::1777085121::1777085121::1::::<><><>0<>0<>88e352414536382f57ca3886249469c7<>res://.godot/imported/Warrior_Attack_1.png-e379d11d69588cb15790864cdf09ed08.ctex::
+Warrior_Attack_2.png::CompressedTexture2D::1178901562801066948::1777085121::1777085121::1::::<><><>0<>0<>0453f8964ede94a29a81ff79d65a687d<>res://.godot/imported/Warrior_Attack_2.png-f613a915b94d21785a856f8141b68b4e.ctex::
+Warrior_Attack_3.png::CompressedTexture2D::5232287217489006502::1777085121::1777085121::1::::<><><>0<>0<>211aa643ede8b156973888a1f9ded197<>res://.godot/imported/Warrior_Attack_3.png-36c59d003c78c08818d9f7a8f0ff0bec.ctex::
+Warrior_Attack_4.png::CompressedTexture2D::443481517482260142::1777085121::1777085121::1::::<><><>0<>0<>7d95a04fe44651ebe2e5706e15f697e6<>res://.godot/imported/Warrior_Attack_4.png-a52d7d24d5a131e5e6d2154626c093b9.ctex::
+Warrior_Attack_5.png::CompressedTexture2D::1239471423466474794::1777085121::1777085121::1::::<><><>0<>0<>9c2c261a2e3b7e9b5c73ee711c17d656<>res://.godot/imported/Warrior_Attack_5.png-c7cc9f0a75663296a6e763cfe0d52515.ctex::
+Warrior_Attack_6.png::CompressedTexture2D::5122077456899732974::1777085121::1777085121::1::::<><><>0<>0<>a3904645339178e6d5b589ee6fceb300<>res://.godot/imported/Warrior_Attack_6.png-fc55b630b8bc5a986b2320e3a38ec667.ctex::
+Warrior_Attack_7.png::CompressedTexture2D::3827737041944192474::1777085121::1777085121::1::::<><><>0<>0<>b0a37f4ea8d0b2e65b2f8bfbecc11a21<>res://.godot/imported/Warrior_Attack_7.png-9e140d3c10220e8755351e54a4c2c4a9.ctex::
+Warrior_Attack_8.png::CompressedTexture2D::5207636136393454998::1777085121::1777085121::1::::<><><>0<>0<>ec1a12a92faf21ba42e3132d4803de1a<>res://.godot/imported/Warrior_Attack_8.png-82b0e03ebe743eb020f7eeda7794cd44.ctex::
+Warrior_Attack_9.png::CompressedTexture2D::1250806910190904984::1777085121::1777085121::1::::<><><>0<>0<>7fd069af6b2b5ea2329d6e6ab7d1fbd2<>res://.godot/imported/Warrior_Attack_9.png-46a72a7cbe410f1a08b44fc56bcd2335.ctex::
+Warrior_Attack_10.png::CompressedTexture2D::1751870172145723528::1777085121::1777085121::1::::<><><>0<>0<>da92ccebc5ba78a32f7c896aaf8fe7ec<>res://.godot/imported/Warrior_Attack_10.png-8192f89caf3de4966cfd6354908c0f93.ctex::
+Warrior_Attack_11.png::CompressedTexture2D::436883621982329232::1777085121::1777085121::1::::<><><>0<>0<>12e55162abe1407eb0c36e793df820f0<>res://.godot/imported/Warrior_Attack_11.png-da40dfe31305f5683c6d99535d308bae.ctex::
+Warrior_Attack_12.png::CompressedTexture2D::2463841440615925690::1777085121::1777085121::1::::<><><>0<>0<>c9ae64b3675b1968675d712fcb128a63<>res://.godot/imported/Warrior_Attack_12.png-384a3764e1f0a2556ee8f1fdc6a4e056.ctex::
+::res://assets/player/Individual Sprite/Crouch/::1777085121
+Warrior_Crouch_1.png::CompressedTexture2D::5432214139905171223::1777085121::1777085121::1::::<><><>0<>0<>f308c393c189735264e3714595bd0ba2<>res://.godot/imported/Warrior_Crouch_1.png-97005ab15063d8421e844224d685dbfc.ctex::
+Warrior_Crouch_2.png::CompressedTexture2D::8490922595654014810::1777085121::1777085121::1::::<><><>0<>0<>04e9be4238068c17f344edc16035f64a<>res://.godot/imported/Warrior_Crouch_2.png-a4475c19967eab10e7ae4de96ee75015.ctex::
+Warrior_Crouch_3.png::CompressedTexture2D::747599185294492886::1777085121::1777085121::1::::<><><>0<>0<>bce5f5a50aa23c47f6ff01bffb4d9a23<>res://.godot/imported/Warrior_Crouch_3.png-b82e27e15f5e1cb31532897d9544182a.ctex::
+Warrior_Crouch_4.png::CompressedTexture2D::4573233441727685542::1777085121::1777085121::1::::<><><>0<>0<>23958555758d349289e44ac08c1ccafd<>res://.godot/imported/Warrior_Crouch_4.png-77de246c45b5488fdbd5d6fb75eba2de.ctex::
+Warrior_Crouch_5.png::CompressedTexture2D::4725891373110839654::1777085121::1777085121::1::::<><><>0<>0<>63a7d05f34f775f6b435fc818b93532f<>res://.godot/imported/Warrior_Crouch_5.png-c97a4c892c671559f58022b8ef0ba916.ctex::
+Warrior_Crouch_6.png::CompressedTexture2D::4682271373244096012::1777085121::1777085121::1::::<><><>0<>0<>940705f791d4d6ee4b840746e315283b<>res://.godot/imported/Warrior_Crouch_6.png-f5871bd907ee88be3a049cb2406c1bf8.ctex::
+::res://assets/player/Individual Sprite/Dash/::1777085121
+Warrior_Dash_1.png::CompressedTexture2D::501009836117735345::1777085121::1777085121::1::::<><><>0<>0<>2f5d24e18d96c9edc364a2a5029e7e99<>res://.godot/imported/Warrior_Dash_1.png-68ab4ec14a24b77d72629f1c01b9678c.ctex::
+Warrior_Dash_2.png::CompressedTexture2D::564813294212940366::1777085121::1777085121::1::::<><><>0<>0<>b25c682388241f1bdf7c55738b4ca88b<>res://.godot/imported/Warrior_Dash_2.png-9044146b3ae8ed84080ae0ae16448072.ctex::
+Warrior_Dash_3.png::CompressedTexture2D::7488965936789261401::1777085121::1777085121::1::::<><><>0<>0<>a3d37d030dc87d4972195fc52368a3ba<>res://.godot/imported/Warrior_Dash_3.png-57ac42bdfb45c3bc4fa425f198f15bf7.ctex::
+Warrior_Dash_4.png::CompressedTexture2D::1231526321011497580::1777085121::1777085121::1::::<><><>0<>0<>8055b680934d520097af135002e60108<>res://.godot/imported/Warrior_Dash_4.png-a869fb9295f884d8f20b53d8b592eef5.ctex::
+Warrior_Dash_5.png::CompressedTexture2D::6216364826834791113::1777085121::1777085121::1::::<><><>0<>0<>da9735cd937abc470da80a8a51421ec4<>res://.godot/imported/Warrior_Dash_5.png-f700e6401dabb9f5e150bdf02958afef.ctex::
+Warrior_Dash_6.png::CompressedTexture2D::8288684796613316731::1777085121::1777085121::1::::<><><>0<>0<>30f7b660215c563caefda7dbc333c653<>res://.godot/imported/Warrior_Dash_6.png-ac632357ccc1ff7d5db39dd63ffd1dd2.ctex::
+Warrior_Dash_7.png::CompressedTexture2D::2866648661253827322::1777085121::1777085121::1::::<><><>0<>0<>fee768f1a63131578425f414bc124fdf<>res://.godot/imported/Warrior_Dash_7.png-1c98606af216e14fb5ef05efe2ad6a3b.ctex::
+::res://assets/player/Individual Sprite/Dash Attack/::1777085121
+Warrior_Dash-Attack_1.png::CompressedTexture2D::1835335818475520961::1777085121::1777085121::1::::<><><>0<>0<>0d4e616f2c5f6d190a3cbccaa5d55e9e<>res://.godot/imported/Warrior_Dash-Attack_1.png-cb2597098f993c3bbf3c6b0ab0796f62.ctex::
+Warrior_Dash-Attack_2.png::CompressedTexture2D::8501013591436733746::1777085121::1777085121::1::::<><><>0<>0<>8151641f61b77704be89565ff222051f<>res://.godot/imported/Warrior_Dash-Attack_2.png-76777fe20266a87660ec257b853476d2.ctex::
+Warrior_Dash-Attack_3.png::CompressedTexture2D::3008530999869255895::1777085121::1777085121::1::::<><><>0<>0<>510e206f791b0f561500a32b6c83b6ea<>res://.godot/imported/Warrior_Dash-Attack_3.png-931635dd0ea9f0ae44362efba64eca0b.ctex::
+Warrior_Dash-Attack_4.png::CompressedTexture2D::55877446817816947::1777085121::1777085121::1::::<><><>0<>0<>6d9135e4fd0bed7e2c1c5c4c798436c7<>res://.godot/imported/Warrior_Dash-Attack_4.png-dee85cbde54988ea1fe968a6ea9f68fd.ctex::
+Warrior_Dash-Attack_5.png::CompressedTexture2D::6525297389830045858::1777085121::1777085121::1::::<><><>0<>0<>95ac526f070dfb3d815f9ba97bb3665f<>res://.godot/imported/Warrior_Dash-Attack_5.png-fa06023be5e19d160aeb7f74a56ad675.ctex::
+Warrior_Dash-Attack_6.png::CompressedTexture2D::635497504838667690::1777085121::1777085121::1::::<><><>0<>0<>02c0441560844478ef5af53db9dc0ea8<>res://.godot/imported/Warrior_Dash-Attack_6.png-82c7fe90403d73e8e1c74cee7222bc8f.ctex::
+Warrior_Dash-Attack_7.png::CompressedTexture2D::3833670940056923381::1777085121::1777085121::1::::<><><>0<>0<>70d9d2ad051bddceac4e2abe2e13a808<>res://.godot/imported/Warrior_Dash-Attack_7.png-7e27a651dfe4efc82cdd169b3d008372.ctex::
+Warrior_Dash-Attack_8.png::CompressedTexture2D::3140325653031179089::1777085121::1777085121::1::::<><><>0<>0<>d72a27d5dfb0fc6ac3a29a3efaf299d7<>res://.godot/imported/Warrior_Dash-Attack_8.png-8be8de0d7500a86fc603e8aa835436e5.ctex::
+Warrior_Dash-Attack_9.png::CompressedTexture2D::3917223158895194492::1777085121::1777085121::1::::<><><>0<>0<>1dd3fa614b7f382b765290a3e05e4f3a<>res://.godot/imported/Warrior_Dash-Attack_9.png-fe2aac837b7fcf85cf298ddb39c1f1e3.ctex::
+Warrior_Dash-Attack_10.png::CompressedTexture2D::2726927852671397740::1777085121::1777085121::1::::<><><>0<>0<>1cdf93da509897fc7cda2fa6b08effd0<>res://.godot/imported/Warrior_Dash-Attack_10.png-bf7b5f1f3098ad5a127dd245ddd4f3c8.ctex::
+::res://assets/player/Individual Sprite/Dash-Attack_noDust/::1777085121
+Warrior_Dash-Attack_1.png::CompressedTexture2D::8373966218768787975::1777085121::1777085121::1::::<><><>0<>0<>dd63e314bf66fd7c526c0fc7e5a0945a<>res://.godot/imported/Warrior_Dash-Attack_1.png-264b29e7b751c2132acfb2e484482de5.ctex::
+Warrior_Dash-Attack_2.png::CompressedTexture2D::7176680128118554956::1777085121::1777085121::1::::<><><>0<>0<>af62a8805c3daa83ef8de62e0c115e10<>res://.godot/imported/Warrior_Dash-Attack_2.png-ee350c04ae72dc332990f09c2f8dbbdc.ctex::
+Warrior_Dash-Attack_3.png::CompressedTexture2D::8901546647313694159::1777085121::1777085121::1::::<><><>0<>0<>709441605a1ad19d8ea873603d46d9cb<>res://.godot/imported/Warrior_Dash-Attack_3.png-e344ee2641bd87bf0985f57bd7679ad2.ctex::
+Warrior_Dash-Attack_4.png::CompressedTexture2D::3140758004220296717::1777085121::1777085121::1::::<><><>0<>0<>f9139748c854c5a235e0e8cf286f8d0e<>res://.godot/imported/Warrior_Dash-Attack_4.png-c4e5cd93975e6d4b695ab78a91b5f45b.ctex::
+Warrior_Dash-Attack_5.png::CompressedTexture2D::6255550785983848314::1777085121::1777085121::1::::<><><>0<>0<>252c6ba08823006f91f619d34baa4346<>res://.godot/imported/Warrior_Dash-Attack_5.png-59140e1ee797bfd80471c2e7eeb8f380.ctex::
+Warrior_Dash-Attack_6.png::CompressedTexture2D::2552079090964892656::1777085121::1777085121::1::::<><><>0<>0<>7bb8bd8e1fcfaf51b297875b83f87d53<>res://.godot/imported/Warrior_Dash-Attack_6.png-2180026f58ca250a2a31e12e240fa267.ctex::
+Warrior_Dash-Attack_7.png::CompressedTexture2D::5621251949340449710::1777085121::1777085121::1::::<><><>0<>0<>36ff81d3997bfec5d4f336ea8de6b6c9<>res://.godot/imported/Warrior_Dash-Attack_7.png-cdc1948dfeec133512b457cfd26b1349.ctex::
+Warrior_Dash-Attack_8.png::CompressedTexture2D::8459003585540834176::1777085121::1777085121::1::::<><><>0<>0<>e0d51ef7317059a6d6b46c1445bdcbdb<>res://.godot/imported/Warrior_Dash-Attack_8.png-5836d372a4e014f553413ad88715f11f.ctex::
+Warrior_Dash-Attack_9.png::CompressedTexture2D::2098403811522815594::1777085121::1777085121::1::::<><><>0<>0<>8c3309528272d802bc53973c5197d002<>res://.godot/imported/Warrior_Dash-Attack_9.png-3e8b6e9588ae38a7dd29b5fd73bc562d.ctex::
+Warrior_Dash-Attack_10.png::CompressedTexture2D::2254351040891103798::1777085121::1777085121::1::::<><><>0<>0<>afe84afa4d9b67f44a6816f3b785e7df<>res://.godot/imported/Warrior_Dash-Attack_10.png-e2a2b634a3d4f09c7eee93795537ef3d.ctex::
+::res://assets/player/Individual Sprite/Dash_NoDust/::1777085121
+Warrior_Dash_1.png::CompressedTexture2D::7764707644179710579::1777085121::1777085121::1::::<><><>0<>0<>3bca4db5c4c5949e0c0eb55bcb8de935<>res://.godot/imported/Warrior_Dash_1.png-f816539eb55f8116e9010ecd7cb2f280.ctex::
+Warrior_Dash_2.png::CompressedTexture2D::3273583617102044811::1777085121::1777085121::1::::<><><>0<>0<>f78c5e0f6dd9f60a6bf027adbca003bb<>res://.godot/imported/Warrior_Dash_2.png-b6dd6379215edae86497798438294964.ctex::
+Warrior_Dash_3.png::CompressedTexture2D::7717284591289480050::1777085121::1777085121::1::::<><><>0<>0<>3fe0bb70a5d87f73e91b469132f50519<>res://.godot/imported/Warrior_Dash_3.png-d0c808b31d6799bd41f35d47ac1934a5.ctex::
+Warrior_Dash_4.png::CompressedTexture2D::1626064550188738882::1777085121::1777085121::1::::<><><>0<>0<>299ed4a5f407335a44a481a255b69959<>res://.godot/imported/Warrior_Dash_4.png-b0fc942ccf4ddf42b5ad116a0ccb3794.ctex::
+Warrior_Dash_5.png::CompressedTexture2D::2765359049734762665::1777085121::1777085121::1::::<><><>0<>0<>d74dc9cf1d5c402a4b32c5c22544fec8<>res://.godot/imported/Warrior_Dash_5.png-7f7dbc3cd2da324b2f8c64bf5990e978.ctex::
+Warrior_Dash_6.png::CompressedTexture2D::8064545858691826270::1777085121::1777085121::1::::<><><>0<>0<>5e7db416db51d1a57850f80e47ed83c6<>res://.godot/imported/Warrior_Dash_6.png-9c3d63554a875d0bcb5743e53ad8d46e.ctex::
+Warrior_Dash_7.png::CompressedTexture2D::2956808194458419225::1777085121::1777085121::1::::<><><>0<>0<>a36b728db3815ea5c725c3047a9dcf4e<>res://.godot/imported/Warrior_Dash_7.png-7115e84aeb2005801c343c65808923a9.ctex::
+::res://assets/player/Individual Sprite/Death-Effect/::1777085121
+Warrior_Death_1.png::CompressedTexture2D::4321331070994505806::1777085121::1777085121::1::::<><><>0<>0<>1b6527d8ba819e515f5b6192dcb3d41a<>res://.godot/imported/Warrior_Death_1.png-a091df79b1ee3444131add38db076cc4.ctex::
+Warrior_Death_2.png::CompressedTexture2D::4789118106238713021::1777085121::1777085121::1::::<><><>0<>0<>86a49d34f611c6208d9e7b966d46a911<>res://.godot/imported/Warrior_Death_2.png-bf455f71db36336b1aa7a970e371fd5a.ctex::
+Warrior_Death_3.png::CompressedTexture2D::2387618467710692057::1777085121::1777085121::1::::<><><>0<>0<>99ebc2ae88fc22a325b4d5a85f037434<>res://.godot/imported/Warrior_Death_3.png-a50f351447434ff22927356378adfeb1.ctex::
+Warrior_Death_4.png::CompressedTexture2D::1824618309567473979::1777085121::1777085121::1::::<><><>0<>0<>6cc42c18935a2fa1d38e0c18ff000836<>res://.godot/imported/Warrior_Death_4.png-73de7a417ad9e12062a526e0e4db1e40.ctex::
+Warrior_Death_5.png::CompressedTexture2D::1427838179334124975::1777085121::1777085121::1::::<><><>0<>0<>c6a1f5d209971004263c4857253496da<>res://.godot/imported/Warrior_Death_5.png-6d42fe6075b74adbdc3b68785ac6355b.ctex::
+Warrior_Death_6.png::CompressedTexture2D::1209478294364346230::1777085121::1777085121::1::::<><><>0<>0<>076b53d840287913d4caa2af768d3b70<>res://.godot/imported/Warrior_Death_6.png-250557903c07fb1bcb08f490474b0e14.ctex::
+Warrior_Death_7.png::CompressedTexture2D::4647960867891087059::1777085121::1777085121::1::::<><><>0<>0<>77d3824e2b4c60563628646f73ffb4b6<>res://.godot/imported/Warrior_Death_7.png-8a1840b8a773aaeccbf9990d9bd6cc08.ctex::
+Warrior_Death_8.png::CompressedTexture2D::8321128979611125591::1777085121::1777085121::1::::<><><>0<>0<>e929b7a19fe0a2695f7969025e7f0eb2<>res://.godot/imported/Warrior_Death_8.png-10326a064210d20f3ab4d5d1c03e650a.ctex::
+Warrior_Death_9.png::CompressedTexture2D::3417435552561858934::1777085121::1777085121::1::::<><><>0<>0<>d2aedcd27476ea2beb6a015bd27278ab<>res://.godot/imported/Warrior_Death_9.png-c158a1b6112e53f09e157f3b274f50d0.ctex::
+Warrior_Death_10.png::CompressedTexture2D::8263161045074182147::1777085121::1777085121::1::::<><><>0<>0<>2ef16185e11c942b0ead6437be91edc4<>res://.godot/imported/Warrior_Death_10.png-5ee7ef179a967c33c53e432909d29f0c.ctex::
+Warrior_Death_11.png::CompressedTexture2D::7165316823714103166::1777085121::1777085121::1::::<><><>0<>0<>e848434683c4f9d0f780764ff587532e<>res://.godot/imported/Warrior_Death_11.png-dda1dec11917585ba0e9907890ab82c7.ctex::
+::res://assets/player/Individual Sprite/DeathnoEffect/::1777085121
+Warrior_Death_1.png::CompressedTexture2D::913165169321426132::1777085121::1777085121::1::::<><><>0<>0<>e304c6de00feeab94c955dc7280b81a6<>res://.godot/imported/Warrior_Death_1.png-cede5d242037f92f108a98e8856e7965.ctex::
+Warrior_Death_2.png::CompressedTexture2D::7124621244856135280::1777085121::1777085121::1::::<><><>0<>0<>20873de3b33fe59b0661b327915fdadd<>res://.godot/imported/Warrior_Death_2.png-e883d50890a896645d97371f96b49605.ctex::
+Warrior_Death_3.png::CompressedTexture2D::1433578885097567643::1777085121::1777085121::1::::<><><>0<>0<>a622bca4f79bbeb35cd28aa86616bc2f<>res://.godot/imported/Warrior_Death_3.png-8bc072be82ea76b7d152d8eb3c5d0722.ctex::
+Warrior_Death_4.png::CompressedTexture2D::6087086669649109658::1777085121::1777085121::1::::<><><>0<>0<>7d0e2169f036e8cc0296d90edd7c65f8<>res://.godot/imported/Warrior_Death_4.png-3c91c4235e26b424dd98caad91e5a84e.ctex::
+Warrior_Death_5.png::CompressedTexture2D::7778954297275011996::1777085121::1777085121::1::::<><><>0<>0<>d77fc954c0f06f508ea2cce4dc5d0e88<>res://.godot/imported/Warrior_Death_5.png-400e1fe2dc0eb4a3ed6aac7b8040b0c1.ctex::
+Warrior_Death_6.png::CompressedTexture2D::4526451592414298746::1777085121::1777085121::1::::<><><>0<>0<>136d99bc3f6bcf475e0a4b7427cf1681<>res://.godot/imported/Warrior_Death_6.png-ef20051e749900b063ddbaa17e2f76f5.ctex::
+Warrior_Death_7.png::CompressedTexture2D::8367364033989160367::1777085121::1777085121::1::::<><><>0<>0<>23c3c00fce3cff87c881a329ef2d5782<>res://.godot/imported/Warrior_Death_7.png-1b0aeb8bf61a4e808fdfddb0232b9e78.ctex::
+Warrior_Death_8.png::CompressedTexture2D::4864903630206086161::1777085121::1777085121::1::::<><><>0<>0<>23d0da50a05ebcb3a522cec65102b786<>res://.godot/imported/Warrior_Death_8.png-6204faeffe7095b954484cee68ac1ccd.ctex::
+Warrior_Death_9.png::CompressedTexture2D::2295113971150274407::1777085121::1777085121::1::::<><><>0<>0<>35b08ce36307a48453490ce3de38d850<>res://.godot/imported/Warrior_Death_9.png-ae0c65545da03dc9f96f7915030d5743.ctex::
+Warrior_Death_10.png::CompressedTexture2D::7610812930879589649::1777085121::1777085121::1::::<><><>0<>0<>e0fc42623a4ebd2aa78749a1ff67718a<>res://.godot/imported/Warrior_Death_10.png-ebfd2d7640ddbc970e3b6d6ac09fd705.ctex::
+Warrior_Death_11.png::CompressedTexture2D::8782060829187395668::1777085121::1777085121::1::::<><><>0<>0<>b2ee3bdff671e472622d5644c666aa92<>res://.godot/imported/Warrior_Death_11.png-7d0adcf6974d53bb8ed8f9b7a7395d57.ctex::
+::res://assets/player/Individual Sprite/Edge-Idle/::1777085121
+Warrior_Edge-Idle_1.png::CompressedTexture2D::232077947713020774::1777085121::1777085121::1::::<><><>0<>0<>af6aa0010b03649513262c6eab881592<>res://.godot/imported/Warrior_Edge-Idle_1.png-693738d9a3e113662920d2f0265f7360.ctex::
+Warrior_Edge-Idle_2.png::CompressedTexture2D::6038283006379429184::1777085121::1777085121::1::::<><><>0<>0<>cbc654a15a6de37e245166ba86274d5e<>res://.godot/imported/Warrior_Edge-Idle_2.png-f4b6eca61a4b7ecc7471f8994daa768b.ctex::
+Warrior_Edge-Idle_3.png::CompressedTexture2D::6698686477678252825::1777085121::1777085121::1::::<><><>0<>0<>026bf200350296d524343e189837eebb<>res://.godot/imported/Warrior_Edge-Idle_3.png-ed5d78e744a52b2d98d258a54f5f3e79.ctex::
+Warrior_Edge-Idle_4.png::CompressedTexture2D::8176582671732769686::1777085121::1777085121::1::::<><><>0<>0<>0fbfa25d8b6d746de09cd570f0afcc6f<>res://.godot/imported/Warrior_Edge-Idle_4.png-ae74f9044b13fac89b9b4ea0229b2514.ctex::
+Warrior_Edge-Idle_5.png::CompressedTexture2D::7756489669337489164::1777085121::1777085121::1::::<><><>0<>0<>e63f7fc3a6e4b1d08093002e839c876f<>res://.godot/imported/Warrior_Edge-Idle_5.png-433c488a5ba41afbda8bfc2d58b40af9.ctex::
+Warrior_Edge-Idle_6.png::CompressedTexture2D::8954677290075893692::1777085121::1777085121::1::::<><><>0<>0<>91ff371e44cfb6ef3a6bcf9a619c00e7<>res://.godot/imported/Warrior_Edge-Idle_6.png-14ea7cf24f3ee917f6c2d86856edd116.ctex::
+::res://assets/player/Individual Sprite/EdgeGrab/::1777085121
+Warrior_Edge-Grab_1.png::CompressedTexture2D::3504503927968807841::1777085121::1777085121::1::::<><><>0<>0<>f239f869146044f3e4195e71bc9292d0<>res://.godot/imported/Warrior_Edge-Grab_1.png-d966d5f484358ea52bcfde23fa26b76f.ctex::
+Warrior_Edge-Grab_2.png::CompressedTexture2D::3621533146960792740::1777085121::1777085121::1::::<><><>0<>0<>43e3a15ce21f867e6a62b73ee9ac0e6f<>res://.godot/imported/Warrior_Edge-Grab_2.png-e22647f79b817d96a84f31865fc34700.ctex::
+Warrior_Edge-Grab_3.png::CompressedTexture2D::6167725248678978673::1777085121::1777085121::1::::<><><>0<>0<>35d5d7577472e492576b39941f2f7e53<>res://.godot/imported/Warrior_Edge-Grab_3.png-8b00df14a463007a181aeaffa7e1180c.ctex::
+Warrior_Edge-Grab_4.png::CompressedTexture2D::5073361452691581243::1777085121::1777085121::1::::<><><>0<>0<>d844849d22c0dcd8c6e4ac17ca05b52e<>res://.godot/imported/Warrior_Edge-Grab_4.png-70a9cee2b225aadb0ee04b4eb4414196.ctex::
+Warrior_Edge-Grab_5.png::CompressedTexture2D::1505972328183476796::1777085121::1777085121::1::::<><><>0<>0<>22643344775e9a580eee14c6010870ce<>res://.godot/imported/Warrior_Edge-Grab_5.png-8560884b9a4dcafbb2fc8bbcd62f1cad.ctex::
+::res://assets/player/Individual Sprite/Fall/::1777085121
+Warrior_Fall_1.png::CompressedTexture2D::2079059611961323651::1777085121::1777085121::1::::<><><>0<>0<>4a254c4d35ac6a772a7c632ec8cfe2c8<>res://.godot/imported/Warrior_Fall_1.png-32b5b7414998ebbe4d2559c3fc9689d4.ctex::
+Warrior_Fall_2.png::CompressedTexture2D::8769834871251716129::1777085121::1777085121::1::::<><><>0<>0<>5bb312c626219bf95096cdf7d2b6a202<>res://.godot/imported/Warrior_Fall_2.png-cf457feced6e4a203ec2b402e06d5fb8.ctex::
+Warrior_Fall_3.png::CompressedTexture2D::2689588870606660140::1777085121::1777085121::1::::<><><>0<>0<>dc2a9dd698507feb0f44ed5b176d8940<>res://.godot/imported/Warrior_Fall_3.png-f6ad3f465af5246866de089991b5e72c.ctex::
+::res://assets/player/Individual Sprite/Hurt-Effect/::1777085121
+Warrior_hurt_1.png::CompressedTexture2D::6065868472313646831::1777085121::1777085121::1::::<><><>0<>0<>10b0a975930432b05d03e548dd58cf7c<>res://.godot/imported/Warrior_hurt_1.png-ca80409c2247b4099714834f0a5017c2.ctex::
+Warrior_hurt_2.png::CompressedTexture2D::7606602274381347177::1777085121::1777085121::1::::<><><>0<>0<>947bc2060a936868e72cd4224f079ae9<>res://.godot/imported/Warrior_hurt_2.png-c2945838d32ea3b409a482a7e9142fde.ctex::
+Warrior_hurt_3.png::CompressedTexture2D::5240879929120063348::1777085121::1777085121::1::::<><><>0<>0<>d423734a6b40fa393ab46afc44c69ffa<>res://.godot/imported/Warrior_hurt_3.png-786198a0347d49908e20dfc71e8b19fd.ctex::
+Warrior_hurt_4.png::CompressedTexture2D::9170270789623250544::1777085121::1777085121::1::::<><><>0<>0<>83c865f6df982fec47cc3b965c1160f6<>res://.godot/imported/Warrior_hurt_4.png-a29d83f68dc2673e7b5d4d9a661d2a9e.ctex::
+::res://assets/player/Individual Sprite/HurtnoEffect/::1777085121
+Warrior_hurt_1.png::CompressedTexture2D::4343956454562010848::1777085121::1777085121::1::::<><><>0<>0<>61db972c07355643e0aaf048bacec359<>res://.godot/imported/Warrior_hurt_1.png-4d579648f92eb833d230aed28b67edb1.ctex::
+Warrior_hurt_2.png::CompressedTexture2D::1191213413727013841::1777085121::1777085121::1::::<><><>0<>0<>16a049a425210a6d47dda506e2173413<>res://.godot/imported/Warrior_hurt_2.png-f6a8162e7b2ff356828b994af0bb8b0a.ctex::
+Warrior_hurt_3.png::CompressedTexture2D::5199460572246017281::1777085121::1777085121::1::::<><><>0<>0<>49e972a58d915d0c2335ee4bc8e9062e<>res://.godot/imported/Warrior_hurt_3.png-af35efa25bfed2b61dfe695f16eddbd6.ctex::
+Warrior_hurt_4.png::CompressedTexture2D::1734845165492172167::1777085121::1777085121::1::::<><><>0<>0<>b22cd6ab35bee1c8d84b3ccb57d0e375<>res://.godot/imported/Warrior_hurt_4.png-f3b3e972d15d14f7fc220e31728904ef.ctex::
+::res://assets/player/Individual Sprite/idle/::1777085121
+Warrior_Idle_1.png::CompressedTexture2D::2391716445698555018::1777085121::1777085121::1::::<><><>0<>0<>05dd88d9854fe1f4df29e14761f050df<>res://.godot/imported/Warrior_Idle_1.png-91151c15d61b0d70f476c16f40f5e09d.ctex::
+Warrior_Idle_2.png::CompressedTexture2D::8742164904464748190::1777085121::1777085121::1::::<><><>0<>0<>9b27253d43aa984434838e975768e6ce<>res://.godot/imported/Warrior_Idle_2.png-842f55bad675fd1edfbe84e227816461.ctex::
+Warrior_Idle_3.png::CompressedTexture2D::6625772992526341839::1777085121::1777085121::1::::<><><>0<>0<>9753b00cddf788a26bf5c1e487c9fe70<>res://.godot/imported/Warrior_Idle_3.png-5de5cf1d4af440f734357430f55c612a.ctex::
+Warrior_Idle_4.png::CompressedTexture2D::5492245399308057684::1777085121::1777085121::1::::<><><>0<>0<>a6b956d5e9ec1ba25ff3548b8c50207c<>res://.godot/imported/Warrior_Idle_4.png-ef98b3a1e27d1d553c338adcec511959.ctex::
+Warrior_Idle_5.png::CompressedTexture2D::2057348977195455831::1777085121::1777085121::1::::<><><>0<>0<>8a51d28ee170964f21a290788cdcb0ba<>res://.godot/imported/Warrior_Idle_5.png-7a989cb7b6fd92b1e8b7cba874282ebd.ctex::
+Warrior_Idle_6.png::CompressedTexture2D::4165512315113466107::1777085121::1777085121::1::::<><><>0<>0<>2fd5a382f462c4125711c2a40c182972<>res://.godot/imported/Warrior_Idle_6.png-5df98e18848b82faa2aab9ed39843781.ctex::
+::res://assets/player/Individual Sprite/Jump/::1777085121
+Warrior_Jump_1.png::CompressedTexture2D::5354328916051488396::1777085121::1777085121::1::::<><><>0<>0<>2e4515489d248b261ed09e5f8aec7aec<>res://.godot/imported/Warrior_Jump_1.png-d689611b117aa5ecc2945f42741af708.ctex::
+Warrior_Jump_2.png::CompressedTexture2D::8981457924220599563::1777085121::1777085121::1::::<><><>0<>0<>f63a9cdc00a1fb8cde82f29297cb95e0<>res://.godot/imported/Warrior_Jump_2.png-59c36a4d40f6ace007efef7990301f8a.ctex::
+Warrior_Jump_3.png::CompressedTexture2D::7451208291152353628::1777085121::1777085121::1::::<><><>0<>0<>079c2c03f9695e1aee6ea975ab926089<>res://.godot/imported/Warrior_Jump_3.png-34417ffb0d0550e81ea4edfc661acc5a.ctex::
+::res://assets/player/Individual Sprite/Ladder-Grab/::1777085121
+Warrior-Ladder-Grab_1.png::CompressedTexture2D::2750715486441010019::1777085121::1777085121::1::::<><><>0<>0<>f2962bff6a2d2aa61bab71eb72b1aef8<>res://.godot/imported/Warrior-Ladder-Grab_1.png-cd696c7475c7cdd9d9e74daf1b59bca2.ctex::
+Warrior-Ladder-Grab_2.png::CompressedTexture2D::3014018409738671904::1777085121::1777085121::1::::<><><>0<>0<>e2f8998596398cdbe41f8908de1d79a2<>res://.godot/imported/Warrior-Ladder-Grab_2.png-3188b2fd78d5764d31f4b80b2f800a55.ctex::
+Warrior-Ladder-Grab_3.png::CompressedTexture2D::1000841440999151862::1777085121::1777085121::1::::<><><>0<>0<>e336e1cde8c92dfb43501952a8772ff4<>res://.godot/imported/Warrior-Ladder-Grab_3.png-0dffa3184eeb3dcbee67029d0e182491.ctex::
+Warrior-Ladder-Grab_4.png::CompressedTexture2D::6829427360092083500::1777085121::1777085121::1::::<><><>0<>0<>7badae08e3a1f8b43716347a769407b1<>res://.godot/imported/Warrior-Ladder-Grab_4.png-6538cb5c3bc5c5c9a1cb2dda0670f11b.ctex::
+Warrior-Ladder-Grab_5.png::CompressedTexture2D::7401222712307095934::1777085121::1777085121::1::::<><><>0<>0<>777830ee295b97b2b6b122fec0f47f53<>res://.godot/imported/Warrior-Ladder-Grab_5.png-f05e8165ba65907cf36d2151af9d8c43.ctex::
+Warrior-Ladder-Grab_6.png::CompressedTexture2D::4435249653635026998::1777085121::1777085121::1::::<><><>0<>0<>1edd5b2eb8bbc9431665284bb3dc34b6<>res://.godot/imported/Warrior-Ladder-Grab_6.png-097a52093747d4ad5235e64f238621b3.ctex::
+Warrior-Ladder-Grab_7.png::CompressedTexture2D::839893431143367717::1777085121::1777085121::1::::<><><>0<>0<>533e82ee41350e190ad299f8bcefebc2<>res://.godot/imported/Warrior-Ladder-Grab_7.png-ad72eb12a79ca324ef0d38e33524b48e.ctex::
+Warrior-Ladder-Grab_8.png::CompressedTexture2D::8303540522125772549::1777085121::1777085121::1::::<><><>0<>0<>a9cb9fed855b8adf6f51a64399fefb24<>res://.godot/imported/Warrior-Ladder-Grab_8.png-eabc9779efe3cc0b1df48758023d6b99.ctex::
+::res://assets/player/Individual Sprite/Run/::1777085121
+Warrior_Run_1.png::CompressedTexture2D::4406123601907567951::1777085121::1777085121::1::::<><><>0<>0<>18e718c2ca622515cce7eccc11facf1c<>res://.godot/imported/Warrior_Run_1.png-39b37100a29b5ef78d2048bfd0de41b6.ctex::
+Warrior_Run_2.png::CompressedTexture2D::3024945344773367211::1777085121::1777085121::1::::<><><>0<>0<>632e8ef3b6994683b091ae74bd860973<>res://.godot/imported/Warrior_Run_2.png-bd3cbe76fabc0126317d7f07fa8f9e4a.ctex::
+Warrior_Run_3.png::CompressedTexture2D::5199944586652737489::1777085121::1777085121::1::::<><><>0<>0<>0e3be365c013b0ab973cfec4e8d502c8<>res://.godot/imported/Warrior_Run_3.png-93ed8cb5a23577b850d22af1749727b8.ctex::
+Warrior_Run_4.png::CompressedTexture2D::1866493495779317486::1777085121::1777085121::1::::<><><>0<>0<>9e764c3610baefe974242516858076b4<>res://.godot/imported/Warrior_Run_4.png-fc4cb034c84a856343aa7037e09e4ee2.ctex::
+Warrior_Run_5.png::CompressedTexture2D::1896873756307382655::1777085121::1777085121::1::::<><><>0<>0<>72fbae52ca43bef441ee325feff43bc7<>res://.godot/imported/Warrior_Run_5.png-fdf21af8c8618ac16c074d9ec6138d04.ctex::
+Warrior_Run_6.png::CompressedTexture2D::7123676748385194944::1777085121::1777085121::1::::<><><>0<>0<>1855dba4e3b010205a4d69b24165886b<>res://.godot/imported/Warrior_Run_6.png-e2a5b54e46a9ec8fcbc813762673b903.ctex::
+Warrior_Run_7.png::CompressedTexture2D::8511510614385717288::1777085121::1777085121::1::::<><><>0<>0<>4e07a6deb6724693a815ef4bd004754a<>res://.godot/imported/Warrior_Run_7.png-b10b59d4520c599e6c3d8b4a774a8de9.ctex::
+Warrior_Run_8.png::CompressedTexture2D::8286587018048262516::1777085121::1777085121::1::::<><><>0<>0<>09da9ae465a2c83299f82602ffa4cb60<>res://.godot/imported/Warrior_Run_8.png-ed71b240d280181f030bee1c5e25a6f3.ctex::
+::res://assets/player/Individual Sprite/Slide/::1777085121
+Warrior-Slide_1.png::CompressedTexture2D::4610832086865340290::1777085121::1777085121::1::::<><><>0<>0<>332ff24f2018a6ea12775d895ab78521<>res://.godot/imported/Warrior-Slide_1.png-30998a14d6e61d81034780357933bc3e.ctex::
+Warrior-Slide_2.png::CompressedTexture2D::1203347491905731860::1777085121::1777085121::1::::<><><>0<>0<>26dfcc65acbcf923fe9c9a7e3fb2ed67<>res://.godot/imported/Warrior-Slide_2.png-b127a4dca80c81f03bf469981b005a0d.ctex::
+Warrior-Slide_3.png::CompressedTexture2D::2061209543347420999::1777085121::1777085121::1::::<><><>0<>0<>a471cf4ec57373fa1cadd29225ce9f24<>res://.godot/imported/Warrior-Slide_3.png-14d63a202fa6af8a82b8e0525931e219.ctex::
+Warrior-Slide_4.png::CompressedTexture2D::6296959125382132195::1777085121::1777085121::1::::<><><>0<>0<>91a461872676d6cca37c1c27afbe02bc<>res://.godot/imported/Warrior-Slide_4.png-073b281e792b6c43e8098cffd2a8358b.ctex::
+Warrior-Slide_5.png::CompressedTexture2D::5229900269602219502::1777085121::1777085121::1::::<><><>0<>0<>8788cd7497adad7144726f52af93934e<>res://.godot/imported/Warrior-Slide_5.png-cced589ed5083e735cb48da8fca82f91.ctex::
+::res://assets/player/Individual Sprite/SlideNoEffect/::1777085121
+Warrior-SlideNoEffect_1.png::CompressedTexture2D::7120419780851751998::1777085121::1777085121::1::::<><><>0<>0<>425a4481867d9387864c5d5040841175<>res://.godot/imported/Warrior-SlideNoEffect_1.png-1d57d9f80594b08ff17cba79f82061dd.ctex::
+Warrior-SlideNoEffect_2.png::CompressedTexture2D::7168154395814711983::1777085121::1777085121::1::::<><><>0<>0<>a85578d2707d2d3db684b585578cc72f<>res://.godot/imported/Warrior-SlideNoEffect_2.png-9f682480a1820a6298cb65fd08a924d0.ctex::
+Warrior-SlideNoEffect_3.png::CompressedTexture2D::1059397489749331921::1777085121::1777085121::1::::<><><>0<>0<>f5deeec4023448026bbdff76aff367a6<>res://.godot/imported/Warrior-SlideNoEffect_3.png-bbee59bda7b2811e4e75b31b3fdaed95.ctex::
+Warrior-SlideNoEffect_4.png::CompressedTexture2D::20260252112279220::1777085121::1777085121::1::::<><><>0<>0<>2f4a72bdd32072606dc3d50def6c1819<>res://.godot/imported/Warrior-SlideNoEffect_4.png-ef7ba0823a8089a91b8e03aa9f2e5201.ctex::
+Warrior-SlideNoEffect_5.png::CompressedTexture2D::962998039351682264::1777085121::1777085121::1::::<><><>0<>0<>a11b6262623966a53f489964920ed433<>res://.godot/imported/Warrior-SlideNoEffect_5.png-fced68e86e80ad650732cd9ab19c18f9.ctex::
+::res://assets/player/Individual Sprite/UptoFall/::1777085121
+Warrior_UptoFall_1.png::CompressedTexture2D::5449512058330810561::1777085121::1777085121::1::::<><><>0<>0<>84e2e6fe13a4db74d67250e59668f090<>res://.godot/imported/Warrior_UptoFall_1.png-3c56df8c518fd2dcb8078dd8274d1f25.ctex::
+Warrior_UptoFall_2.png::CompressedTexture2D::3157376716730392896::1777085121::1777085121::1::::<><><>0<>0<>0599f775e20449d3a89711531211a5b6<>res://.godot/imported/Warrior_UptoFall_2.png-cba18962cf9a36f69b84cfcdcf30152a.ctex::
+::res://assets/player/Individual Sprite/WallSlide/::1777085121
+Warrior_WallSlide_1.png::CompressedTexture2D::9002811996668683545::1777085121::1777085121::1::::<><><>0<>0<>87c03c76b6a047e7aaab34c9a1697e83<>res://.godot/imported/Warrior_WallSlide_1.png-8c9b1bc71a703c47518182b738154880.ctex::
+Warrior_WallSlide_2.png::CompressedTexture2D::3939631563091986995::1777085121::1777085121::1::::<><><>0<>0<>de65e822c96a78969ad0be647a4cd739<>res://.godot/imported/Warrior_WallSlide_2.png-ca932816775d90bdd06f0fcf28e1cbdc.ctex::
+Warrior_WallSlide_3.png::CompressedTexture2D::6433271411729767382::1777085121::1777085121::1::::<><><>0<>0<>89cceea2c3fb92f5f845d61a942661b2<>res://.godot/imported/Warrior_WallSlide_3.png-65df7db6334e1d5b6ef7d143682e2486.ctex::
+::res://assets/player/Individual Sprite/WallSlide_NoDust/::1777085121
+Warrior_WallSlide_1.png::CompressedTexture2D::5603115710756895052::1777085121::1777085121::1::::<><><>0<>0<>070a1cc643062fcd9164c91f32e72b24<>res://.godot/imported/Warrior_WallSlide_1.png-1fb61ab2004b7c12fe796a690b0c2f39.ctex::
+Warrior_WallSlide_2.png::CompressedTexture2D::8084164921421642689::1777085121::1777085121::1::::<><><>0<>0<>410c4b9dd4f86c979830c5daf7fcc4e8<>res://.godot/imported/Warrior_WallSlide_2.png-9dfb24b581feeb8df42d795bec3f6762.ctex::
+Warrior_WallSlide_3.png::CompressedTexture2D::5898645232025545851::1777085121::1777085121::1::::<><><>0<>0<>1a6bc39e9a5b28a30a755195fb748eaf<>res://.godot/imported/Warrior_WallSlide_3.png-5f2364b03474924958f0abfe7b2bf06c.ctex::
+::res://assets/player/SpriteSheet/::1777085136
+Warrior_Sheet-Effect.png::CompressedTexture2D::4971006072759859140::1777085136::1777085136::1::::<><><>0<>0<>a88a595fc410a0762250f446fe76f9cc<>res://.godot/imported/Warrior_Sheet-Effect.png-32a55f587cb3d533703b4df97705b948.ctex::
+Warrior_SheetnoEffect.png::CompressedTexture2D::2718076241262835663::1777085136::1777085136::1::::<><><>0<>0<>31471773862805ae9820c99b0d2570d8<>res://.godot/imported/Warrior_SheetnoEffect.png-b8cda60f857939dcaeaf2e988161dfba.ctex::
+::res://assets/tilesets/::1777085171
+Dungeon Tile Set.png::CompressedTexture2D::8950637441287331594::1777085171::1777085171::1::::<><><>0<>0<>eae34cc3c18bb2fb72c6625abad2f02b<>res://.godot/imported/Dungeon Tile Set.png-77e29f56c9a74a6f8b12ab82f30f6ae4.ctex::

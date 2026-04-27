@@ -1,0 +1,6 @@
+res://player_(character_body_2d).tscn
+res://scenes/player_(character_body_2d).tscn
+res://scenes/player.gd
+res://scenes/level_1.tscn
+res://scenes/skeleton.tscn
+res://scenes/skeleton.gd
