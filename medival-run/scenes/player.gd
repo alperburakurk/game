@@ -4,6 +4,7 @@ const SPEED = 200.0
 const JUMP_VELOCITY = -400.0
 const STAIRS_SPEED = 120.0
 const STAIRS_TILE_TYPE = "stairs"
+const SPIKES_TILE_TYPE = "spikes"
 
 @onready var sprite = $AnimatedSprite2D
 @onready var attack_area = $AttackArea
@@ -25,6 +26,10 @@ func _ready():
 
 func _physics_process(delta):
 	if is_dead:
+		return
+
+	if _is_on_spikes_tile():
+		die()
 		return
 
 	var on_stairs := _is_on_stairs_tile()
@@ -152,3 +157,21 @@ func _is_on_stairs_tile() -> bool:
 
 	var tile_type = tile_data.get_custom_data("tile_type")
 	return tile_type != null and String(tile_type).to_lower() == STAIRS_TILE_TYPE
+
+func _is_on_spikes_tile() -> bool:
+	if tile_map_layer == null:
+		return false
+
+	# Sample centre, left edge, and right edge near the player's feet so
+	# detection is reliable even when only partially overlapping a spike tile.
+	var offsets: Array[Vector2] = [Vector2(0, 8), Vector2(-6, 8), Vector2(6, 8)]
+	for offset in offsets:
+		var sample_pos: Vector2 = global_position + offset
+		var cell := tile_map_layer.local_to_map(tile_map_layer.to_local(sample_pos))
+		var tile_data := tile_map_layer.get_cell_tile_data(cell)
+		if tile_data == null:
+			continue
+		var tile_type = tile_data.get_custom_data("tile_type")
+		if tile_type != null and String(tile_type).to_lower() == SPIKES_TILE_TYPE:
+			return true
+	return false
