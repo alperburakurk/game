@@ -40,12 +40,12 @@ region_rect = Rect2(16, 0, 32, 32)
 position = Vector2(2, -18)
 
 [node name="Skeleton" parent="Floor" unique_id=1331090446 instance=ExtResource("3_rus8k")]
-position = Vector2(1063, 672)
+position = Vector2(1063, 678)
 scale = Vector2(0.6, 0.6)
 patrol_distance = 100.0
 
 [node name="Player" parent="Floor" unique_id=1853860674 instance=ExtResource("1_014kd")]
-position = Vector2(717, 668)
+position = Vector2(716, 677)
 
 [node name="Camera2D" type="Camera2D" parent="Floor/Player" unique_id=1429890990]
 visible = false

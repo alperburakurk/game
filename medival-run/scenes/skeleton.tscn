@@ -511,9 +511,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ssl1b"]
-size = Vector2(18.685896, 23.076923)
+size = Vector2(20.000002, 23.076925)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w4hcs"]
+size = Vector2(20, 26)
 
 [node name="Skeleton" type="CharacterBody2D" unique_id=1331090446]
 scale = Vector2(0.5, 0.5)
@@ -525,7 +526,7 @@ sprite_frames = SubResource("SpriteFrames_ms50g")
 animation = &"attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1574474535]
-position = Vector2(-10, 4)
+position = Vector2(-11, 5)
 scale = Vector2(1.3, 1.3)
 shape = SubResource("RectangleShape2D_ssl1b")
 
@@ -534,7 +535,7 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange" unique_id=209150446]
-position = Vector2(-11, 5)
+position = Vector2(-11, 7)
 shape = SubResource("RectangleShape2D_w4hcs")
 debug_color = Color(0.7755334, 0.349626, 0.6930987, 0.41960785)
 
