@@ -482,7 +482,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_imnbr"]
-size = Vector2(4.9375, 12.606771)
+size = Vector2(4.666667, 12.666667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4fffl"]
 size = Vector2(6.0763903, 13.425348)
@@ -505,7 +505,7 @@ zoom = Vector2(3, 3)
 limit_enabled = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=200819426]
-position = Vector2(-5.703125, 0.45507848)
+position = Vector2(-5.5, 2.4999995)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_imnbr")
 

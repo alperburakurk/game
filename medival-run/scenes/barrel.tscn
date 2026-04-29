@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c776e2s5kwrw3"]
+
+[ext_resource type="Texture2D" uid="uid://d0r0xq0ibryco" path="res://assets/tilesets/Dungeon Tile Set.png" id="1_q36op"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ptqd7"]
+radius = 7.0
+height = 16.0
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1381310147]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1082886049]
+texture = ExtResource("1_q36op")
+region_enabled = true
+region_rect = Rect2(161.24393, 193.31953, 13.299866, 14.619705)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=846910589]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_ptqd7")
