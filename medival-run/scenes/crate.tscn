@@ -1,11 +1,17 @@
-[gd_scene format=3 uid="uid://dyoay8wsnkmbo"]
+[gd_scene load_steps=3 format=3 uid="uid://dyoay8wsnkmbo"]
 
 [ext_resource type="Texture2D" uid="uid://d0r0xq0ibryco" path="res://assets/tilesets/Dungeon Tile Set.png" id="1_b66cd"]
+[ext_resource type="Script" path="res://scenes/destructible_prop.gd" id="2_prop"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b66cd"]
 size = Vector2(16.6, 16)
 
-[node name="StaticBody2D" type="StaticBody2D" unique_id=1381310147]
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1381310147]
+collision_layer = 8
+collision_mask = 1
+lock_rotation = true
+linear_damp = 8.0
+script = ExtResource("2_prop")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1082886049]
 position = Vector2(0.25, 0)
