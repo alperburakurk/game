@@ -338,7 +338,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"hurt_effect",
-"speed": 4.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -482,10 +482,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_imnbr"]
-size = Vector2(10.166667, 15.520834)
+size = Vector2(4.9375, 12.606771)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4fffl"]
-size = Vector2(13.784721, 17.125002)
+size = Vector2(6.597224, 13.425348)
 
 [node name="Player" type="CharacterBody2D" unique_id=1853860674]
 collision_layer = 2
@@ -494,15 +494,16 @@ script = ExtResource("1_4fffl")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=271153593]
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_rf0gn")
-animation = &"hurt_effect"
-frame_progress = 0.96970904
+animation = &"edge-grab"
+frame = 4
+frame_progress = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D" unique_id=1552768427]
 zoom = Vector2(3, 3)
 limit_enabled = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=200819426]
-position = Vector2(-2, 1)
+position = Vector2(-5.703125, 0.45507848)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_imnbr")
 
@@ -514,7 +515,7 @@ collision_mask = 4
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=548951257]
-position = Vector2(4.229167, 1.1083338)
+position = Vector2(0.8333333, 0.83333325)
 scale = Vector2(1.2, 1.2)
 shape = SubResource("RectangleShape2D_4fffl")
 debug_color = Color(0.59112513, 0.53520024, 0.3327356, 0.41960785)

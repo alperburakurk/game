@@ -1,0 +1,4 @@
+res://scenes/player.gd
+res://scenes/level_1.tscn
+res://assets/tilesets/dungeon_tileset.tres
+res://scenes/player_(character_body_2d).tscn
