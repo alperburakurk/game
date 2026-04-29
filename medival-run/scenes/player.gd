@@ -6,6 +6,8 @@ const JUMP_VELOCITY = -400.0
 @onready var sprite = $AnimatedSprite2D
 @onready var attack_area = $AttackArea
 @onready var health_bar = get_tree().current_scene.get_node("UI/HealthBar")
+@onready var ui_layer = get_tree().current_scene.get_node_or_null("UI")
+@onready var game_over_label = get_tree().current_scene.get_node_or_null("UI/Game Over")
 
 var is_attacking := false
 var facing_direction := 1
@@ -13,11 +15,28 @@ var facing_direction := 1
 var max_health := 6
 var health := 6
 var is_dead := false
+var game_over_overlay: ColorRect
 
 func _ready():
 	attack_area.monitoring = false
 	health_bar.max_value = max_health
 	health_bar.value = health
+	
+	if ui_layer != null and game_over_label != null:
+		game_over_overlay = ColorRect.new()
+		game_over_overlay.color = Color(0, 0, 0, 0.7)
+		game_over_overlay.set_anchors_preset(Control.PRESET_FULL_RECT)
+		game_over_overlay.visible = false
+		ui_layer.add_child(game_over_overlay)
+		
+		game_over_label.modulate = Color(1, 1, 1, 1)
+		game_over_label.text = "GAME OVER\nPress R to Restart"
+		game_over_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		game_over_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		game_over_label.position = Vector2(326, 254)
+		game_over_label.size = Vector2(500, 140)
+		game_over_label.z_index = 1
+		game_over_label.visible = false
 
 func _physics_process(delta):
 	if is_dead:
@@ -94,7 +113,17 @@ func die():
 	velocity = Vector2.ZERO
 	attack_area.monitoring = false
 	sprite.play("death")
+	if game_over_label != null:
+		game_over_label.visible = true
+	if game_over_overlay != null:
+		game_over_overlay.visible = true
 	await sprite.animation_finished
+
+func _unhandled_input(event):
+	if not is_dead:
+		return
+	if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_R:
+		get_tree().reload_current_scene()
 
 func is_player_dead():
 	return is_dead
