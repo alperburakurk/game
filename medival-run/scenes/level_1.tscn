@@ -8,10 +8,15 @@
 [ext_resource type="PackedScene" uid="uid://c776e2s5kwrw3" path="res://scenes/barrel.tscn" id="7_pa8r4"]
 [ext_resource type="PackedScene" uid="uid://dyoay8wsnkmbo" path="res://scenes/crate.tscn" id="8_15mv3"]
 [ext_resource type="PackedScene" uid="uid://bi1iaad4gf55t" path="res://scenes/chest.tscn" id="8_e3sih"]
+[ext_resource type="Texture2D" path="res://assets/coins/Coin_One.png" id="9_coin_tex"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_keyicon"]
 atlas = ExtResource("1_bswci")
 region = Rect2(176, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_coinicon"]
+atlas = ExtResource("9_coin_tex")
+region = Rect2(0, 0, 16, 16)
 
 [node name="Level1" type="Node2D" unique_id=1771793934]
 position = Vector2(-252, -408)
@@ -78,6 +83,26 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="Count" type="Label" parent="UI/KeyCounter" unique_id=1992481278]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "x 0"
+
+[node name="CoinCounter" type="HBoxContainer" parent="UI"]
+offset_left = 21.0
+offset_top = 100.0
+offset_right = 221.0
+offset_bottom = 140.0
+theme_override_constants/separation = 8
+
+[node name="Icon" type="TextureRect" parent="UI/CoinCounter"]
+texture_filter = 1
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = SubResource("AtlasTexture_coinicon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Count" type="Label" parent="UI/CoinCounter"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "x 0"

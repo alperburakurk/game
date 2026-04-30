@@ -3,13 +3,16 @@ extends Node2D
 @onready var player = $Floor/Player
 @onready var game_over_label = $UI/"Game Over"
 @onready var key_count_label: Label = $UI/KeyCounter/Count
+@onready var coin_count_label: Label = $UI/CoinCounter/Count
 
 var game_over := false
 var key_count := 0
+var coin_count := 0
 
 func _ready() -> void:
 	game_over_label.visible = false
 	_refresh_key_label()
+	_refresh_coin_label()
 
 func _process(_delta: float) -> void:
 	if game_over:
@@ -30,6 +33,14 @@ func add_key() -> void:
 	key_count += 1
 	_refresh_key_label()
 
+func add_coin(amount: int = 1) -> void:
+	coin_count += amount
+	_refresh_coin_label()
+
 func _refresh_key_label() -> void:
 	if key_count_label != null:
 		key_count_label.text = "x %d" % key_count
+
+func _refresh_coin_label() -> void:
+	if coin_count_label != null:
+		coin_count_label.text = "x %d" % coin_count
