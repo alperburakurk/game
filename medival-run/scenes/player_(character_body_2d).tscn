@@ -485,7 +485,7 @@ animations = [{
 size = Vector2(4.666667, 12.666667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4fffl"]
-size = Vector2(6.0763903, 13.425348)
+size = Vector2(12.5, 11.805556)
 
 [node name="Player" type="CharacterBody2D" unique_id=1853860674]
 position = Vector2(6, 0)
@@ -518,7 +518,7 @@ collision_mask = 12
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=548951257]
-position = Vector2(1.145834, 0.8333333)
+position = Vector2(5, 2.916667)
 scale = Vector2(1.2, 1.2)
 shape = SubResource("RectangleShape2D_4fffl")
 debug_color = Color(0.59112513, 0.53520024, 0.3327356, 0.41960785)

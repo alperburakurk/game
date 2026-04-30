@@ -5,6 +5,9 @@ const JUMP_VELOCITY = -400.0
 const STAIRS_SPEED = 120.0
 const STAIRS_TILE_TYPE = "stairs"
 const SPIKES_TILE_TYPE = "spikes"
+# Movement speed multiplier while attacking. 1.0 = full speed, 0.0 = locked in place.
+# Slightly reduced gives the swing a little weight without feeling sluggish.
+const ATTACK_MOVE_MULT = 0.75
 
 @onready var sprite = $AnimatedSprite2D
 @onready var attack_area = $AttackArea
@@ -73,7 +76,14 @@ func _physics_process(delta):
 		move_and_slide()
 		return
 
-	if not is_attacking:
+	if is_attacking:
+		# Keep momentum and allow steering during the swing, but don't flip
+		# facing so the attack hitbox stays aimed where the swing started.
+		if direction != 0:
+			velocity.x = direction * SPEED * ATTACK_MOVE_MULT
+		else:
+			velocity.x = move_toward(velocity.x, 0, SPEED * ATTACK_MOVE_MULT)
+	else:
 		if direction != 0:
 			velocity.x = direction * SPEED
 			facing_direction = direction
@@ -82,7 +92,6 @@ func _physics_process(delta):
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	if not is_attacking:
 		if not is_on_floor():
 			if velocity.y < 0:
 				sprite.play("jump")
@@ -97,8 +106,7 @@ func _physics_process(delta):
 
 func attack():
 	is_attacking = true
-	velocity.x = 0
-	
+
 	attack_area.monitoring = true
 	sprite.play("attack")
 

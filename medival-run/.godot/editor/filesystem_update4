@@ -8,3 +8,5 @@ res://scenes/crate.tscn
 res://scenes/destructible_prop.gd
 res://scenes/level_1.gd
 res://scenes/coin.tscn
+res://scenes/player_(character_body_2d).tscn
+res://scenes/player.gd
