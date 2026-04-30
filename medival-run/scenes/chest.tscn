@@ -1,7 +1,8 @@
-[gd_scene format=3 uid="uid://bi1iaad4gf55t"]
+[gd_scene load_steps=8 format=3 uid="uid://bi1iaad4gf55t"]
 
 [ext_resource type="Texture2D" uid="uid://d0r0xq0ibryco" path="res://assets/tilesets/Dungeon Tile Set.png" id="1_tex"]
 [ext_resource type="Script" uid="uid://b80vsr8aycwwm" path="res://scenes/chest.gd" id="2_script"]
+[ext_resource type="PackedScene" uid="uid://cl4qkpd3a2y6n" path="res://scenes/key.tscn" id="3_key"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_chest_closed"]
 atlas = ExtResource("1_tex")
@@ -50,6 +51,7 @@ size = Vector2(25.125, 17.5)
 [node name="Chest" type="StaticBody2D" unique_id=1268287756]
 collision_mask = 0
 script = ExtResource("2_script")
+key_scene = ExtResource("3_key")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1194377110]
 sprite_frames = SubResource("SpriteFrames_chest")

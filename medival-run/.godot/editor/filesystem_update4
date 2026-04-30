@@ -1,2 +1,5 @@
 res://scenes/level_1.tscn
 res://assets/tilesets/dungeon_tileset.tres
+res://scenes/chest.gd
+res://scenes/key.gd
+res://scenes/key.tscn

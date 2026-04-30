@@ -1,22 +1,23 @@
 [gd_scene format=3 uid="uid://cl4qkpd3a2y6n"]
 
 [ext_resource type="Texture2D" uid="uid://d0r0xq0ibryco" path="res://assets/tilesets/Dungeon Tile Set.png" id="1_tex"]
-[ext_resource type="Script" path="res://scenes/key.gd" id="2_script"]
+[ext_resource type="Script" uid="uid://cvoefa7ykx341" path="res://scenes/key.gd" id="2_script"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_key"]
 atlas = ExtResource("1_tex")
 region = Rect2(176, 144, 16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_key"]
-size = Vector2(12, 8)
+size = Vector2(13, 4)
 
-[node name="Key" type="Area2D"]
+[node name="Key" type="Area2D" unique_id=630912413]
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("2_script")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=324806136]
 texture = SubResource("AtlasTexture_key")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1974755314]
+position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_key")

@@ -34,10 +34,17 @@ func _on_animation_finished() -> void:
 
 func _spawn_key() -> void:
 	if key_scene == null:
+		push_warning("Chest has no key_scene assigned; cannot spawn key.")
 		return
 	var key := key_scene.instantiate()
-	get_tree().current_scene.add_child(key)
+	var parent := get_tree().current_scene
+	if parent == null:
+		parent = get_tree().root
+	parent.add_child(key)
 	key.global_position = global_position + Vector2(0, -2)
+	if key.has_method("pop"):
+		var direction := 1 if randi() % 2 == 0 else -1
+		key.call_deferred("pop", direction)
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player":

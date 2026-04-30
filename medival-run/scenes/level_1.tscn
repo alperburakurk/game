@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bgoabnx0cmj4c" path="res://scenes/skeleton.tscn" id="3_rus8k"]
 [ext_resource type="PackedScene" uid="uid://c776e2s5kwrw3" path="res://scenes/barrel.tscn" id="7_pa8r4"]
 [ext_resource type="PackedScene" uid="uid://dyoay8wsnkmbo" path="res://scenes/crate.tscn" id="8_15mv3"]
+[ext_resource type="PackedScene" uid="uid://bi1iaad4gf55t" path="res://scenes/chest.tscn" id="8_e3sih"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_keyicon"]
 atlas = ExtResource("1_bswci")
@@ -99,3 +100,6 @@ position = Vector2(747, 664)
 
 [node name="barrel" parent="." unique_id=619327318 instance=ExtResource("7_pa8r4")]
 position = Vector2(803, 665)
+
+[node name="Chest" parent="." unique_id=1268287756 instance=ExtResource("8_e3sih")]
+position = Vector2(929, 663)
