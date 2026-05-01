@@ -142,6 +142,9 @@ func take_damage(amount := 1):
 
 func die():
 	is_dead = true
+	health = 0
+	if health_bar != null:
+		health_bar.value = 0
 	velocity = Vector2.ZERO
 	attack_area.monitoring = false
 	sprite.play("death")
