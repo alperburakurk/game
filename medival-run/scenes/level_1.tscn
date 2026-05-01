@@ -115,12 +115,14 @@ text = "x 0"
 
 [node name="Game Over" type="Label" parent="UI" unique_id=1587409659]
 visible = false
-modulate = Color(0, 0, 0, 1)
 offset_left = 400.0
 offset_top = 201.0
 offset_right = 700.0
 offset_bottom = 351.0
 size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 64
 text = "GAME OVER
 Press R to Restart"
