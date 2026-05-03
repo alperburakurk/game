@@ -485,7 +485,7 @@ animations = [{
 size = Vector2(4.666667, 12.666667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4fffl"]
-size = Vector2(12.5, 11.805556)
+size = Vector2(16.666666, 11.805556)
 
 [node name="Player" type="CharacterBody2D" unique_id=1853860674]
 position = Vector2(6, 0)
@@ -497,8 +497,9 @@ script = ExtResource("1_4fffl")
 position = Vector2(-3, 0)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_rf0gn")
-animation = &"idle"
-frame_progress = 0.53206545
+animation = &"attack"
+frame = 11
+frame_progress = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D" unique_id=1552768427]
 position = Vector2(-5, 0)
@@ -518,7 +519,7 @@ collision_mask = 12
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=548951257]
-position = Vector2(5, 2.916667)
+position = Vector2(7.5000014, 2.916667)
 scale = Vector2(1.2, 1.2)
 shape = SubResource("RectangleShape2D_4fffl")
 debug_color = Color(0.59112513, 0.53520024, 0.3327356, 0.41960785)

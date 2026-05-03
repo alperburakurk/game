@@ -329,7 +329,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
-"speed": 10.0
+"speed": 13.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -379,7 +379,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"death",
-"speed": 10.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -523,9 +523,8 @@ script = ExtResource("1_w4hcs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1647412550]
 sprite_frames = SubResource("SpriteFrames_ms50g")
-animation = &"attack"
-frame = 15
-frame_progress = 1.0
+animation = &"walk"
+frame_progress = 0.7384095
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1574474535]
 position = Vector2(-10.000001, 4)
