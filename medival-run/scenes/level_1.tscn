@@ -138,3 +138,6 @@ position = Vector2(796, 637)
 
 [node name="Chest" parent="." unique_id=1268287756 instance=ExtResource("8_e3sih")]
 position = Vector2(849, 637)
+
+[node name="crate2" parent="." unique_id=1539688799 instance=ExtResource("8_15mv3")]
+position = Vector2(657, 637)

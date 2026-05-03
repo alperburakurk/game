@@ -492,6 +492,7 @@ position = Vector2(6, 0)
 collision_layer = 2
 collision_mask = 9
 script = ExtResource("1_4fffl")
+hurt_flash_modulate = Color(0.49447137, 0, 0.12670895, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=271153593]
 position = Vector2(-3, 0)
@@ -519,7 +520,7 @@ collision_mask = 12
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=548951257]
-position = Vector2(7.5000014, 2.916667)
+position = Vector2(0.83333254, 2.916667)
 scale = Vector2(1.2, 1.2)
 shape = SubResource("RectangleShape2D_4fffl")
 debug_color = Color(0.59112513, 0.53520024, 0.3327356, 0.41960785)

@@ -9,23 +9,32 @@ const SPIKES_TILE_TYPE = "spikes"
 # Slightly reduced gives the swing a little weight without feeling sluggish.
 const ATTACK_MOVE_MULT = 0.75
 
+@export var hurt_knockback_speed: float = 220.0
+@export var hurt_knockback_decel: float = 1200.0
+@export var hurt_recoil_duration: float = 0.14
+@export var hurt_flash_duration: float = 0.08
+@export var hurt_flash_modulate: Color = Color(1, 0.82, 0.82)
+
 @onready var sprite = $AnimatedSprite2D
 @onready var attack_area = $AttackArea
 @onready var health_bar = get_tree().current_scene.get_node("UI/HealthBar")
 @onready var tile_map_layer: TileMapLayer = get_tree().current_scene.get_node_or_null("TileMapLayer")
 
 var is_attacking := false
-var is_hurt := false
 var facing_direction := 1
 
 var max_health := 6
 var health := 6
 var is_dead := false
 
+var _hurt_recoil_remaining: float = 0.0
+
+
 func _ready():
 	attack_area.monitoring = false
 	health_bar.max_value = max_health
 	health_bar.value = health
+
 
 func _physics_process(delta):
 	if is_dead:
@@ -37,11 +46,12 @@ func _physics_process(delta):
 
 	var on_stairs := _is_on_stairs_tile()
 
-	if is_hurt:
+	if _hurt_recoil_remaining > 0:
 		if not is_on_floor() and not on_stairs:
 			velocity += get_gravity() * delta
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, hurt_knockback_decel * delta)
 		move_and_slide()
+		_hurt_recoil_remaining = maxf(0.0, _hurt_recoil_remaining - delta)
 		return
 
 	if not is_on_floor() and not on_stairs:
@@ -104,6 +114,7 @@ func _physics_process(delta):
 
 	move_and_slide()
 
+
 func attack():
 	is_attacking = true
 
@@ -114,44 +125,68 @@ func attack():
 
 	for body in attack_area.get_overlapping_bodies():
 		if body.has_method("take_damage"):
-			body.take_damage()
+			body.take_damage(1, self)
 
 	await sprite.animation_finished
 
 	attack_area.monitoring = false
 	is_attacking = false
 
-func take_damage(amount := 1):
-	if is_dead or is_hurt:
+
+func take_damage(amount: int = 1, attacker: Node2D = null):
+	if is_dead:
 		return
-	
+
 	health -= amount
 	health = max(health, 0)
 	health_bar.value = health
-	
+
+	velocity.x = _knockback_sign_from_attacker(attacker) * hurt_knockback_speed
+	_hurt_recoil_remaining = hurt_recoil_duration
+	_flash_hurt()
+
 	if health <= 0:
 		die()
 	else:
 		is_attacking = false
-		is_hurt = true
 		attack_area.monitoring = false
-		velocity.x = 0
 		sprite.play("hurt_effect")
-		await get_tree().create_timer(0.5).timeout
-		is_hurt = false
+
+
+func _knockback_sign_from_attacker(attacker: Node2D) -> float:
+	if attacker == null:
+		return signf(float(-facing_direction))
+	var s := signf(global_position.x - attacker.global_position.x)
+	if s == 0.0:
+		s = signf(attacker.scale.x)
+	if s == 0.0:
+		s = 1.0
+	return s
+
+
+func _flash_hurt() -> void:
+	sprite.modulate = hurt_flash_modulate
+	await get_tree().create_timer(hurt_flash_duration).timeout
+	if is_instance_valid(sprite):
+		sprite.modulate = Color.WHITE
+
 
 func die():
 	is_dead = true
 	health = 0
 	if health_bar != null:
 		health_bar.value = 0
+	_hurt_recoil_remaining = 0.0
 	velocity = Vector2.ZERO
 	attack_area.monitoring = false
+	sprite.modulate = Color.WHITE
 	sprite.play("death")
 	await sprite.animation_finished
 
+
 func is_player_dead():
 	return is_dead
+
 
 func _is_on_stairs_tile() -> bool:
 	if tile_map_layer == null:
@@ -168,6 +203,7 @@ func _is_on_stairs_tile() -> bool:
 
 	var tile_type = tile_data.get_custom_data("tile_type")
 	return tile_type != null and String(tile_type).to_lower() == STAIRS_TILE_TYPE
+
 
 func _is_on_spikes_tile() -> bool:
 	if tile_map_layer == null:

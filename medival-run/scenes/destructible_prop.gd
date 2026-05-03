@@ -6,7 +6,7 @@ const MAX_SPAWN_COINS := 64
 @export_range(0, 64, 1) var coin_min: int = 0
 @export_range(0, 64, 1) var coin_max: int = 0
 
-func take_damage() -> void:
+func take_damage(_amount: int = 1, _attacker: Node2D = null) -> void:
 	_spawn_coins()
 	queue_free()
 

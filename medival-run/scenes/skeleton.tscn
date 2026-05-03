@@ -517,14 +517,17 @@ size = Vector2(10.769232, 21.538464)
 size = Vector2(20, 28)
 
 [node name="Skeleton" type="CharacterBody2D" unique_id=1331090446]
+position = Vector2(5, -2)
 scale = Vector2(0.5, 0.5)
 collision_layer = 4
 script = ExtResource("1_w4hcs")
+hit_flash_modulate = Color(0.49411765, 0, 0.1254902, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1647412550]
 sprite_frames = SubResource("SpriteFrames_ms50g")
-animation = &"walk"
-frame_progress = 0.7384095
+animation = &"attack"
+frame = 15
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1574474535]
 position = Vector2(-10.000001, 4)
@@ -536,7 +539,7 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange" unique_id=209150446]
-position = Vector2(-11, 4)
+position = Vector2(-10, 4)
 shape = SubResource("RectangleShape2D_w4hcs")
 debug_color = Color(0.7755334, 0.349626, 0.6930987, 0.41960785)
 
