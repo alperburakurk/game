@@ -126,7 +126,7 @@ func take_damage(_amount: int = 1, attacker: Node2D = null):
 	if is_dead or _hit_invuln_remaining > 0:
 		return
 
-	health -= 1
+	health -= _amount
 	velocity.x = _knockback_sign_from_attacker(attacker) * hit_knockback_speed
 	_hit_invuln_remaining = hit_invulnerability_duration
 	_hit_recoil_remaining = hit_recoil_duration

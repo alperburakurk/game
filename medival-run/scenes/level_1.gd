@@ -1,5 +1,7 @@
 extends Node2D
 
+@export var debugging_mode: bool = false
+
 @onready var player = $Floor/Player
 @onready var game_over_label = $UI/"Game Over"
 @onready var key_count_label: Label = $UI/KeyCounter/Count
@@ -9,10 +11,22 @@ var game_over := false
 var key_count := 0
 var coin_count := 0
 
+var _debug_overlay: Node2D
+
+
 func _ready() -> void:
 	game_over_label.visible = false
 	_refresh_key_label()
 	_refresh_coin_label()
+	if debugging_mode:
+		_setup_debug_overlay()
+
+
+func _setup_debug_overlay() -> void:
+	_debug_overlay = preload("res://scenes/level_debug_overlay.gd").new()
+	_debug_overlay.name = "DebugOverlay"
+	add_child(_debug_overlay)
+	_debug_overlay.setup(self, player)
 
 func _process(_delta: float) -> void:
 	if game_over:

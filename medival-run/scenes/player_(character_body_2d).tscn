@@ -26,16 +26,16 @@
 [ext_resource type="Texture2D" uid="uid://cutivdjgatsv6" path="res://assets/player/Individual Sprite/Dash/Warrior_Dash_5.png" id="23_0ebnw"]
 [ext_resource type="Texture2D" uid="uid://dqddoskyiv5n8" path="res://assets/player/Individual Sprite/Dash/Warrior_Dash_6.png" id="24_ty41a"]
 [ext_resource type="Texture2D" uid="uid://bg3vjxba70njm" path="res://assets/player/Individual Sprite/Dash/Warrior_Dash_7.png" id="25_qr00g"]
-[ext_resource type="Texture2D" uid="uid://1fbyh8jog6gj" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_1.png" id="26_0bx3n"]
-[ext_resource type="Texture2D" uid="uid://dtd7pmlaq3dag" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_2.png" id="27_qwsfc"]
-[ext_resource type="Texture2D" uid="uid://bi4mcikxroxil" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_3.png" id="28_i2g76"]
-[ext_resource type="Texture2D" uid="uid://2cj8fhlfekx" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_4.png" id="29_2dt0e"]
-[ext_resource type="Texture2D" uid="uid://cy75xvavkmngc" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_5.png" id="30_q5eno"]
-[ext_resource type="Texture2D" uid="uid://jb3s0a01ewwg" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_6.png" id="31_n20hx"]
-[ext_resource type="Texture2D" uid="uid://buvcaak4mrjkv" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_7.png" id="32_kp4b7"]
-[ext_resource type="Texture2D" uid="uid://bk0gx7vppepc8" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_8.png" id="33_8trud"]
-[ext_resource type="Texture2D" uid="uid://bv2sdfvy8co0s" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_9.png" id="34_e72hr"]
-[ext_resource type="Texture2D" uid="uid://be37drpcb1ds3" path="res://assets/player/Individual Sprite/Dash Attack/Warrior_Dash-Attack_10.png" id="35_l1sfg"]
+[ext_resource type="Texture2D" uid="uid://drkoaagy8f4gp" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_1.png" id="26_0bx3n"]
+[ext_resource type="Texture2D" uid="uid://daio4xnvilujs" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_2.png" id="27_qwsfc"]
+[ext_resource type="Texture2D" uid="uid://dy28f4xyy0ss2" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_3.png" id="28_i2g76"]
+[ext_resource type="Texture2D" uid="uid://bk0n3ch3uva8d" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_4.png" id="29_2dt0e"]
+[ext_resource type="Texture2D" uid="uid://cveiaiwxrjjmg" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_5.png" id="30_q5eno"]
+[ext_resource type="Texture2D" uid="uid://bcmimtph8d5my" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_6.png" id="31_n20hx"]
+[ext_resource type="Texture2D" uid="uid://cmc8g0jgebwxa" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_7.png" id="32_kp4b7"]
+[ext_resource type="Texture2D" uid="uid://dsrus2qdvp14w" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_8.png" id="33_8trud"]
+[ext_resource type="Texture2D" uid="uid://45qn0iqr5dc1" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_9.png" id="34_e72hr"]
+[ext_resource type="Texture2D" uid="uid://7ea3kd47e0ny" path="res://assets/player/Individual Sprite/Dash-Attack_noDust/Warrior_Dash-Attack_10.png" id="35_l1sfg"]
 [ext_resource type="Texture2D" uid="uid://b2tjxrigsqask" path="res://assets/player/Individual Sprite/Death-Effect/Warrior_Death_1.png" id="36_p6ckm"]
 [ext_resource type="Texture2D" uid="uid://cah5ctj44angn" path="res://assets/player/Individual Sprite/Death-Effect/Warrior_Death_2.png" id="37_2dga3"]
 [ext_resource type="Texture2D" uid="uid://baatyy15jw738" path="res://assets/player/Individual Sprite/Death-Effect/Warrior_Death_3.png" id="38_scwg1"]
@@ -485,7 +485,7 @@ animations = [{
 size = Vector2(4.666667, 12.666667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4fffl"]
-size = Vector2(16.666666, 11.805556)
+size = Vector2(14, 10)
 
 [node name="Player" type="CharacterBody2D" unique_id=1853860674]
 position = Vector2(6, 0)
@@ -498,8 +498,8 @@ hurt_flash_modulate = Color(0.49447137, 0, 0.12670895, 1)
 position = Vector2(-3, 0)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_rf0gn")
-animation = &"attack"
-frame = 11
+animation = &"dash attack"
+frame = 9
 frame_progress = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D" unique_id=1552768427]
@@ -513,16 +513,13 @@ scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_imnbr")
 
 [node name="AttackArea" type="Area2D" parent="." unique_id=1497884766]
-position = Vector2(-7, 0)
+position = Vector2(10, 0)
 scale = Vector2(1.2, 1.2)
 collision_layer = 0
 collision_mask = 12
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=548951257]
-position = Vector2(0.83333254, 2.916667)
-scale = Vector2(1.2, 1.2)
+position = Vector2(-2, 3)
 shape = SubResource("RectangleShape2D_4fffl")
 debug_color = Color(0.59112513, 0.53520024, 0.3327356, 0.41960785)
-
-[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]

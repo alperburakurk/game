@@ -1,14 +1,20 @@
 extends CharacterBody2D
 
+enum AttackKind { NONE, STANDARD, DASH }
+
 const SPEED = 200.0
 const JUMP_VELOCITY = -400.0
 const STAIRS_SPEED = 120.0
 const STAIRS_TILE_TYPE = "stairs"
 const SPIKES_TILE_TYPE = "spikes"
-# Movement speed multiplier while attacking. 1.0 = full speed, 0.0 = locked in place.
-# Slightly reduced gives the swing a little weight without feeling sluggish.
-const ATTACK_MOVE_MULT = 0.75
+const STANDARD_HITBOX_OFFSET_X = 10.0
+const DASH_HITBOX_OFFSET_X = 14.0
 
+@export var standard_attack_damage := 2
+@export var dash_attack_damage := 1
+@export var standard_attack_damage_delay: float = 0.5
+@export var dash_attack_damage_delay: float = 1.0
+@export_range(0.0, 1.0, 0.05) var dash_attack_move_mult: float = 0.5
 @export var hurt_knockback_speed: float = 220.0
 @export var hurt_knockback_decel: float = 1200.0
 @export var hurt_recoil_duration: float = 0.14
@@ -20,8 +26,9 @@ const ATTACK_MOVE_MULT = 0.75
 @onready var health_bar = get_tree().current_scene.get_node("UI/HealthBar")
 @onready var tile_map_layer: TileMapLayer = get_tree().current_scene.get_node_or_null("TileMapLayer")
 
-var is_attacking := false
+var attack_kind := AttackKind.NONE
 var facing_direction := 1
+var attack_facing := 1
 
 var max_health := 6
 var health := 6
@@ -34,6 +41,7 @@ func _ready():
 	attack_area.monitoring = false
 	health_bar.max_value = max_health
 	health_bar.value = health
+	_update_facing(facing_direction)
 
 
 func _physics_process(delta):
@@ -60,19 +68,20 @@ func _physics_process(delta):
 	var direction = Input.get_axis("ui_left", "ui_right")
 	var climb_direction = Input.get_axis("ui_up", "ui_down")
 
-	if Input.is_action_just_pressed("attack") and not is_attacking:
-		attack()
+	if Input.is_action_just_pressed("attack") and attack_kind == AttackKind.NONE:
+		if direction != 0:
+			dash_attack(direction)
+		else:
+			standard_attack()
 
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and not is_attacking and not on_stairs:
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and attack_kind == AttackKind.NONE and not on_stairs:
 		velocity.y = JUMP_VELOCITY
 
-	if on_stairs and not is_attacking:
+	if on_stairs and attack_kind == AttackKind.NONE:
 		velocity.y = climb_direction * STAIRS_SPEED
 		if direction != 0:
 			velocity.x = direction * SPEED
-			facing_direction = direction
-			sprite.flip_h = direction < 0
-			attack_area.position.x = abs(attack_area.position.x) * facing_direction
+			_update_facing(direction)
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
@@ -86,19 +95,18 @@ func _physics_process(delta):
 		move_and_slide()
 		return
 
-	if is_attacking:
-		# Keep momentum and allow steering during the swing, but don't flip
-		# facing so the attack hitbox stays aimed where the swing started.
+	if attack_kind == AttackKind.STANDARD:
+		velocity.x = 0
+	elif attack_kind == AttackKind.DASH:
+		var dash_speed := SPEED * dash_attack_move_mult
 		if direction != 0:
-			velocity.x = direction * SPEED * ATTACK_MOVE_MULT
+			velocity.x = direction * dash_speed
 		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED * ATTACK_MOVE_MULT)
+			velocity.x = move_toward(velocity.x, 0, dash_speed)
 	else:
 		if direction != 0:
 			velocity.x = direction * SPEED
-			facing_direction = direction
-			sprite.flip_h = direction < 0
-			attack_area.position.x = abs(attack_area.position.x) * facing_direction
+			_update_facing(direction)
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
@@ -115,22 +123,89 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func attack():
-	is_attacking = true
+func _update_facing(dir: int) -> void:
+	facing_direction = dir
+	sprite.flip_h = dir < 0
+	if attack_kind == AttackKind.NONE:
+		attack_area.position.x = STANDARD_HITBOX_OFFSET_X * facing_direction
+
+
+func _lock_attack_facing(dir: int, hitbox_offset_x: float) -> void:
+	attack_facing = dir
+	facing_direction = dir
+	sprite.flip_h = dir < 0
+	attack_area.position.x = hitbox_offset_x * attack_facing
+
+
+func _cancel_attack() -> void:
+	attack_kind = AttackKind.NONE
+	attack_area.monitoring = false
+
+
+func standard_attack() -> void:
+	_run_attack(
+		&"attack",
+		standard_attack_damage,
+		AttackKind.STANDARD,
+		STANDARD_HITBOX_OFFSET_X,
+		facing_direction,
+		standard_attack_damage_delay
+	)
+
+
+func dash_attack(dir: int) -> void:
+	_run_attack(
+		&"dash attack",
+		dash_attack_damage,
+		AttackKind.DASH,
+		DASH_HITBOX_OFFSET_X,
+		dir,
+		dash_attack_damage_delay
+	)
+
+
+func _run_attack(
+	animation: StringName,
+	damage: int,
+	kind: AttackKind,
+	hitbox_offset_x: float,
+	lock_dir: int,
+	damage_delay: float
+) -> void:
+	attack_kind = kind
+	_lock_attack_facing(lock_dir, hitbox_offset_x)
+	attack_area.monitoring = false
+	sprite.play(animation)
+
+	if damage_delay > 0.0:
+		await get_tree().create_timer(damage_delay).timeout
+
+	if attack_kind != kind:
+		return
+
+	if sprite.animation != animation or not sprite.is_playing():
+		attack_kind = AttackKind.NONE
+		return
 
 	attack_area.monitoring = true
-	sprite.play("attack")
 
-	await get_tree().physics_frame
+	var hit_targets: Array = []
+	while attack_kind == kind:
+		await get_tree().physics_frame
+		for body in attack_area.get_overlapping_bodies():
+			if body in hit_targets:
+				continue
+			if body.has_method("take_damage"):
+				body.take_damage(damage, self)
+				hit_targets.append(body)
+		if sprite.animation != animation:
+			break
+		if not sprite.is_playing():
+			break
 
-	for body in attack_area.get_overlapping_bodies():
-		if body.has_method("take_damage"):
-			body.take_damage(1, self)
-
-	await sprite.animation_finished
-
-	attack_area.monitoring = false
-	is_attacking = false
+	if attack_kind == kind:
+		attack_area.monitoring = false
+		attack_kind = AttackKind.NONE
 
 
 func take_damage(amount: int = 1, attacker: Node2D = null):
@@ -148,8 +223,7 @@ func take_damage(amount: int = 1, attacker: Node2D = null):
 	if health <= 0:
 		die()
 	else:
-		is_attacking = false
-		attack_area.monitoring = false
+		_cancel_attack()
 		sprite.play("hurt_effect")
 
 
@@ -178,7 +252,7 @@ func die():
 		health_bar.value = 0
 	_hurt_recoil_remaining = 0.0
 	velocity = Vector2.ZERO
-	attack_area.monitoring = false
+	_cancel_attack()
 	sprite.modulate = Color.WHITE
 	sprite.play("death")
 	await sprite.animation_finished
