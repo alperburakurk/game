@@ -11,6 +11,26 @@ extends CharacterBody2D
 
 const GRAVITY = 980.0
 
+# Per-animation x offsets (in unscaled local pixels) that compensate for the
+# fact that the source sprite sheets have different frame widths and the
+# character body is NOT in the center of every frame.
+#
+# Baseline is "walk" (22 wide, body roughly centered). For animations whose
+# frames are wider and have the body off-center to the left of the frame (so
+# the weapon/effect can extend to the right), we shift the texture to the
+# right with sprite.offset to keep the body aligned with the collision shapes.
+# Roughly: offset.x = (frame_width - walk_width) / 2.
+#
+# Tweak these numbers if you can still see drift in-game.
+const ANIM_BODY_OFFSETS := {
+	"walk": Vector2.ZERO,
+	"idle": Vector2(1, 0),
+	"react": Vector2.ZERO,
+	"hit": Vector2(4, 0),
+	"death": Vector2(5.5, 0),
+	"attack": Vector2(10.5, 0),
+}
+
 @onready var sprite = $AnimatedSprite2D
 @onready var attack_range = $AttackRange
 
@@ -30,6 +50,23 @@ var _hit_recoil_remaining: float = 0.0
 func _ready():
 	start_x = global_position.x
 	sprite.play("walk")
+	sprite.animation_changed.connect(_apply_body_offset)
+	_apply_body_offset()
+
+
+func _set_facing(dir: int) -> void:
+	sprite.flip_h = dir < 0
+	_apply_body_offset()
+
+
+func _apply_body_offset() -> void:
+	if not is_instance_valid(sprite):
+		return
+	var raw: Vector2 = ANIM_BODY_OFFSETS.get(sprite.animation, Vector2.ZERO)
+	# flip_h mirrors the texture (and the offset) around the node position,
+	# so we negate the x offset when facing left to keep the body anchored.
+	var sign := -1.0 if sprite.flip_h else 1.0
+	sprite.offset = Vector2(raw.x * sign, raw.y)
 
 
 func _physics_process(delta):
@@ -64,7 +101,7 @@ func _physics_process(delta):
 		velocity.y += GRAVITY * delta
 
 	velocity.x = direction * speed
-	sprite.flip_h = direction < 0
+	_set_facing(direction)
 
 	move_and_slide()
 

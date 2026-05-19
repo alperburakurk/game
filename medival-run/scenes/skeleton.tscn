@@ -524,10 +524,10 @@ script = ExtResource("1_w4hcs")
 hit_flash_modulate = Color(0.49411765, 0, 0.1254902, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1647412550]
+position = Vector2(-10, 4)
 sprite_frames = SubResource("SpriteFrames_ms50g")
-animation = &"attack"
-frame = 15
-frame_progress = 1.0
+animation = &"walk"
+frame_progress = 0.36170083
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1574474535]
 position = Vector2(-10.000001, 4)
